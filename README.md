@@ -35,7 +35,7 @@ curl -L archfi.sf.net/archfi > archfi
 sh archfi
 ```
 https://github.com/MatMoul/archfi
-## option *C*:
+## option *C* - manual instalation:
 lsblk
 >cfdisk /dev/...
 
