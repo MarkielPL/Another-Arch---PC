@@ -285,3 +285,5 @@ reboot
 - Zastąp `/dev/sdX`, `/dev/sdb1`, `/dev/sdb2`, `/dev/sdb3` właściwymi urządzeniami.
 - Użyj `amd-ucode` lub `intel-ucode` zgodnie z procesorem.
 - Pakiet `base-devel` jest potrzebny do budowania pakietów z AUR.
+
+
