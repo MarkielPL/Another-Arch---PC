@@ -157,7 +157,6 @@ sh archfi
    nano > /etc/vconsole.conf
    KEYMAP=pl
    FONT=Lat2-Terminus16.psfu.gz
-   EOF
    ```
 
 5. Set the hostname:
@@ -260,8 +259,18 @@ options root=/dev/sdX2 rw
 
 2. Enable `multilib` in `/etc/pacman.conf`:
    ```ini
-[multilib]
-Include = /etc/pacman.d/mirrorlist
+   # Misc options
+   #UseSyslog
+   Color
+   #NoProgressBar
+   CheckSpace
+   #VerbosePkgLists
+   ParallelDownloads = 5
+   DownloadUser = alpm
+   #DisableSandbox
+   ILoveCandy
+   [multilib]
+   Include = /etc/pacman.d/mirrorlist
    ```
 
 3. Synchronize packages again:
