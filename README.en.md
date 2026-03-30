@@ -154,10 +154,10 @@ sh archfi
 
 4. Configure console settings:
    ```sh
-   cat > /etc/vconsole.conf <<'EOF'
-KEYMAP=pl
-FONT=Lat2-Terminus16.psfu.gz
-EOF
+   nano > /etc/vconsole.conf
+   KEYMAP=pl
+   FONT=Lat2-Terminus16.psfu.gz
+   EOF
    ```
 
 5. Set the hostname:
@@ -167,11 +167,10 @@ EOF
 
 6. Configure `/etc/hosts`:
    ```sh
-   cat > /etc/hosts <<'EOF'
-127.0.0.1 localhost.localdomain localhost
-::1       localhost.localdomain localhost
-127.0.1.1 myhostname.localdomain myhostname
-EOF
+   nano > /etc/hosts
+   127.0.0.1 localhost.localdomain localhost
+   ::1       localhost.localdomain localhost
+   127.0.1.1 myhostname.localdomain myhostname
    ```
 
    Replace `myhostname` with your chosen hostname.
