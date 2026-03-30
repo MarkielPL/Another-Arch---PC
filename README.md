@@ -2,8 +2,8 @@
 
 ## Language Selection
 
-- 🇬🇧 English
-- 🇵🇱 Polski
+- 🇬🇧 English [English](README.en.md)
+- 🇵🇱 Polski [Polski](README.pl.md)
 - 🇩🇪 Deutsch
 - 🇫🇷 Français
 
