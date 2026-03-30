@@ -9,7 +9,7 @@ Upewnij się, że system wystartował w trybie UEFI:
 ls /sys/firmware/efi/efivars
 ```
 
-Jeśli katalog istnieje, jesteś w trybie UEFI.
+Jeśli katalog istnieje, jesteś w trybie UEFI;
 
 ## 2. Sprawdź połączenie sieciowe
 Przetestuj łączność z Internetem:
@@ -33,10 +33,10 @@ cfdisk /dev/sdX
 
 Przykładowy układ dla UEFI:
 - `/dev/sdb1` — EFI 512M, FAT32
-- `/dev/sdb2` — root, ext4 lub btrfs
+- `/dev/sdb2` — root, ext4/btrfs
 - `/dev/sdb3` — home, btrfs
 
-Dostosuj nazwy urządzeń do swojego systemu.
+Dostosuj nazwy urządzeń do swojego systemu;
 
 ## 4. Utwórz systemy plików
 
@@ -135,7 +135,7 @@ useradd -m -g users -G wheel,storage,power -s /bin/bash -d /home/<uzytkownik> <u
 passwd <uzytkownik>
 ```
 
-Zastąp `<uzytkownik>` swoją nazwą użytkownika.
+Zastąp `<uzytkownik>` swoją nazwą użytkownika;
 
 ## 9. Instalacja sieci i bootloadera
 Zainstaluj NetworkManager i włącz usługę:
