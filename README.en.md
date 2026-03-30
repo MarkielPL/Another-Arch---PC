@@ -301,23 +301,7 @@ sh archfi
    ```
 
 6. Install additional firmware from AUR if needed:
-   ```sh
-   git clone https://aur.archlinux.org/wd719x-firmware.git
-   cd wd719x-firmware
-   makepkg -sri
-   ```
-
-   Or:
-   ```sh
-   git clone https://aur.archlinux.org/aic94xx-firmware.git
-   cd aic94xx-firmware
-   makepkg -sri
-   ```
-
-7. Install extra firmware:
-   ```sh
-   yay -S upd72020x-fw
-   ```
+https://wiki.archlinux.org/title/Mkinitcpio#Possibly_missing_firmware_for_module_XXXX
 
    If needed, rebuild initramfs:
    ```sh
