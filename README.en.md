@@ -1,6 +1,6 @@
 # Another Arch PC
 
-This is the consolidated English installation guide for Arch Linux, based on the Polish version.
+This is the consolidated English installation guide for Arch Linux, with Polish character support.
 
 ## 1. Verify UEFI
 Make sure the live system booted in UEFI mode:
