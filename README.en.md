@@ -285,10 +285,10 @@ Include = /etc/pacman.d/mirrorlist
    ```sh
    pacman -S git
    cd /opt
-git clone https://aur.archlinux.org/yay-git.git
-chown -R $USER:$USER yay-git
-cd yay-git
-makepkg -si
+   git clone https://aur.archlinux.org/yay-git.git
+   chown -R $USER:$USER yay-git
+   cd yay-git
+   makepkg -si
    ```
 
 6. Install additional firmware from AUR if needed:
