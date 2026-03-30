@@ -325,7 +325,7 @@ options root=/dev/sdX2 rw
 
 8. Install example packages:
    ```sh
-   yay -S firefox yakuake
+   yay -S brave-bin yakuake
    ```
 
 ## 9. Desktop environment and configuration
