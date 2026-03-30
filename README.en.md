@@ -1,4 +1,4 @@
-# AnotherArch-PC
+# Another Arch PC
 
 This is the consolidated English installation guide for Arch Linux, based on the Polish version.
 
