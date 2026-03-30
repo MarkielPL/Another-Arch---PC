@@ -200,6 +200,7 @@ exit
 umount -R /mnt
 reboot
 ```
+Odłącz Nosnijk instalacyjny;
 
 ## 11. Włącz multilib
 W pliku `/etc/pacman.conf` popraw sekcję:
