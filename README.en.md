@@ -9,7 +9,7 @@ Make sure the live system booted in UEFI mode:
 ls /sys/firmware/efi/efivars
 ```
 
-If the directory exists, you are in UEFI mode.
+If the directory exists, you are in UEFI mode;
 
 ## 2. Test the network
 Check connection to the Internet:
@@ -55,8 +55,8 @@ pacman-key --init
 pacman-key --populate archlinux
 ```
 
-- `pacman-key --init` creates the local GPG key database.
-- `pacman-key --populate archlinux` imports official signing keys.
+- `pacman-key --init` creates the local GPG key database;
+- `pacman-key --populate archlinux` imports official signing keys;
 
 ## 5. Installation options
 
@@ -66,8 +66,8 @@ pacman-key --populate archlinux
 archinstall
 ```
 
-- Automatic Arch Linux installer.
-- Good if you want a quick install without manual configuration.
+- Automatic Arch Linux installer;
+- Good if you want a quick install without manual configuration;
 
 ### Option B: `archfi`
 
@@ -76,7 +76,7 @@ curl -L archfi.sf.net/archfi > archfi
 sh archfi
 ```
 
-- A scripted Arch Linux installer.
+- A scripted Arch Linux installer;
 - Repository: https://github.com/MatMoul/archfi
 
 ### Option C: manual installation
@@ -95,7 +95,7 @@ sh archfi
    - `/dev/sdX3` — swap 16G
    - `/dev/sdX4` — /home remaining space
 
-   Replace `sdX` with the correct disk letter.
+   Replace `sdX` with the correct disk letter;
 
 4. Create filesystems:
    ```sh
@@ -124,7 +124,7 @@ sh archfi
    pacstrap /mnt base base-devel linux linux-firmware nano usbutils amd-ucode btrfs-progs
    ```
 
-   - For Intel CPUs, use `intel-ucode` instead of `amd-ucode`.
+   - For Intel CPUs, use `intel-ucode` instead of `amd-ucode`;
 
 7. Generate `fstab` and chroot:
    ```sh
@@ -186,7 +186,7 @@ sh archfi
    passwd <username>
    ```
 
-   Replace `<username>` with your chosen username.
+   Replace `<username>` with your chosen username;
 
 ## 7. Install network and bootloader
 
