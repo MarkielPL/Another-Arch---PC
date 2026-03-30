@@ -205,7 +205,7 @@ EOF
 
 2. Install a bootloader:
 
-## A
+## Option A:
 ### systemd-boot
    ```sh
    pacman -S --needed efibootmgr dosfstools
@@ -228,7 +228,7 @@ initrd  /initramfs-linux.img
 options root=/dev/sdX2 rw
    ```
 
-## B
+## Option B:
 ### GRUB
    ```sh
    pacman -S --needed grub efibootmgr os-prober
@@ -236,7 +236,7 @@ options root=/dev/sdX2 rw
    grub-mkconfig -o /boot/grub/grub.cfg
    ```
 
-## C
+## Option C:
 ### rEFInd
    ```sh
    pacman -S --needed refind
