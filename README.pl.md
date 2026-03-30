@@ -110,7 +110,7 @@ Ustaw nazwę hosta:
 ```sh
 echo "mojhost" > /etc/hostname
 ```
-Zamień `mojhost` na wybraną nazwę hosta.
+Zamień `mojhost` na własną nazwę hosta.
 Skonfiguruj plik `/etc/hosts`:
 
 ```
