@@ -212,18 +212,18 @@ sh archfi
 
    Create `/boot/loader/loader.conf`:
    ```ini
-default arch
-timeout 3
-console-mode max
-editor no
+   default arch
+   timeout 3
+   console-mode max
+   editor no
    ```
 
    Create `/boot/loader/entries/arch.conf`:
    ```ini
-title   Arch Linux
-linux   /vmlinuz-linux
-initrd  /initramfs-linux.img
-options root=/dev/sdX2 rw
+   title   Arch Linux
+   linux   /vmlinuz-linux
+   initrd  /initramfs-linux.img
+   options root=/dev/sdX2 rw
    ```
 
 ## Option B:
@@ -269,6 +269,7 @@ options root=/dev/sdX2 rw
    DownloadUser = alpm
    #DisableSandbox
    ILoveCandy
+   
    [multilib]
    Include = /etc/pacman.d/mirrorlist
    ```
@@ -281,12 +282,12 @@ options root=/dev/sdX2 rw
 4. Configure mirrors:
    ```sh
    pacman -S reflector rsync curl
-   reflector --verbose --country "your country" --age 12 --sort rate --save /etc/pacman.d/mirrorlist
+   reflector --verbose --country "your country" --age 24 --sort rate --save /etc/pacman.d/mirrorlist
    ```
 
    Or:
    ```sh
-   reflector --verbose --latest 200 --age 12 --protocol http,https --sort rate --save /etc/pacman.d/mirrorlist
+   reflector --verbose --latest 200 --age 24 --protocol http,https --sort rate --save /etc/pacman.d/mirrorlist
    ```
 
 5. Install `yay`:
@@ -355,17 +356,17 @@ systemctl enable sddm
 
 1. Install fonts:
    ```sh
-yay -S ttf-nerd-fonts-symbols
-```
+   yay -S ttf-nerd-fonts-symbols
+   ```
 2. Install Oh My Zsh and Powerlevel10k:
    ```sh
-sh -c "$(wget https://raw.github.com/ohmyzsh/oh-my-zsh/master/tools/install.sh -O -)"
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+   sh -c "$(wget https://raw.github.com/ohmyzsh/oh-my-zsh/master/tools/install.sh -O -)"
+   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 3. Install plugins:
    ```sh
-git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+   git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 ```
 4. Edit `~/.zshrc`:
    - set `ZSH_THEME="powerlevel10k/powerlevel10k"`
