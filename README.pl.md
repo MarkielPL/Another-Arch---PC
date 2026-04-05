@@ -1,5 +1,3 @@
-# AnotherArch-PC
-
 To jest kompletna instrukcja instalacji Arch Linux z UEFI, tworzeniem partycji, konfiguracją bootloadera, sieci i instalacją środowiska graficznego.
 
 ## 1. Sprawdź tryb UEFI
