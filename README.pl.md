@@ -1,4 +1,5 @@
-To jest kompletna instrukcja instalacji Arch Linux z UEFI, tworzeniem partycji, konfiguracją bootloadera, sieci i instalacją środowiska graficznego.
+To jest instrukcja instalacji Arch Linux z UEFI, tworzeniem partycji, konfiguracją bootloadera, sieci i instalacją środowiska graficznego.
+Wciąż ją rozwijam i dziekuję za wszelkie sugestię, bo zostało sporo poprawek.
 
 ## 1. Sprawdź tryb UEFI
 Upewnij się, że system wystartował w trybie UEFI:
@@ -262,6 +263,12 @@ mkinitcpio -p linux
 ```
 
 ## 14. Instalacja pulpitu
+{
+- dodac instalację sterowników GPU;
+- rozbić instalację na różne środowiśka i ich personalizację;
+- utworzyć skrypty instalacyjne gotowych rozwiązań.
+}
+ - 
 Zainstaluj Xorg i KDE:
 
 ```sh
