@@ -278,6 +278,11 @@ mkinitcpio -p linux
 ```
 </details>
 
+<details>
+<summary> Instalacja nakładki graficznej </summary>
+
+
+
 ## 14. Instalacja pulpitu
 {
 - dodac instalację sterowników GPU;
@@ -302,6 +307,7 @@ systemctl enable sddm
 ```sh
 reboot
 ```
+</details>
 
 ## Uwagi
 - Zastąp `/dev/sdX`, `/dev/sdb1`, `/dev/sdb2`, `/dev/sdb3` właściwymi urządzeniami.
