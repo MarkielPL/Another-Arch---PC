@@ -268,7 +268,7 @@ mkinitcpio -p linux
 - rozbić instalację na różne środowiśka i ich personalizację;
 - utworzyć skrypty instalacyjne gotowych rozwiązań.
 }
- - 
+
 Zainstaluj Xorg i KDE:
 
 ```sh
