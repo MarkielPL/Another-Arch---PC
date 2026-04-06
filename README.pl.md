@@ -2,7 +2,9 @@ To jest instrukcja instalacji Arch Linux z UEFI, tworzeniem partycji, konfigurac
 Wciąż ją rozwijam i dziekuję za wszelkie sugestię, bo zostało sporo poprawek.
 
 <details>
-<summary> ##1. Sprawdź tryb UEFI </summary>
+<summary>Instalacja </summary>
+
+## 1. Sprawdź tryb UEFI 
 Upewnij się, że system wystartował w trybie UEFI:
 
 ```sh
@@ -10,7 +12,7 @@ ls /sys/firmware/efi/efivars
 ```
 
 Jeśli katalog istnieje, jesteś w trybie UEFI;
-</details>
+
 
 ## 2. Sprawdź połączenie sieciowe
 Przetestuj łączność z Internetem:
@@ -151,6 +153,8 @@ Po restarcie możesz połączyć się z Wi-Fi:
 ```sh
 nmcli device wifi connect <SSID> password <PASSWORD>
 ```
+
+</details>
 
 ### Opcja 1: systemd-boot
 
