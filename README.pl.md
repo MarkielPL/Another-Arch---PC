@@ -2,7 +2,7 @@ To jest instrukcja instalacji Arch Linux z UEFI, tworzeniem partycji, konfigurac
 Wciąż ją rozwijam i dziekuję za wszelkie sugestię, bo zostało sporo poprawek.
 
 <details>
-<summary>Instalacja </summary>
+<summary>Instalacja systemu </summary>
 
 ## 1. Sprawdź tryb UEFI 
 Upewnij się, że system wystartował w trybie UEFI:
@@ -156,6 +156,10 @@ nmcli device wifi connect <SSID> password <PASSWORD>
 
 </details>
 
+<details>
+<summary>Instalacja programu rozruchowego </summary>
+
+
 ### Opcja 1: systemd-boot
 
 ```sh
@@ -206,6 +210,11 @@ umount -R /mnt
 reboot
 ```
 Odłącz Nosnijk instalacyjny;
+
+</details>
+
+<details>
+<summary> Personalizacja </summary>
 
 ## 11. Włącz multilib
 W pliku `/etc/pacman.conf` popraw sekcję:
@@ -267,6 +276,7 @@ Jeśli potrzeba, przebuduj initramfs:
 ```sh
 mkinitcpio -p linux
 ```
+</details>
 
 ## 14. Instalacja pulpitu
 {
